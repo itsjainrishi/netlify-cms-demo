@@ -1,0 +1,16 @@
+{
+  "title": "New Event",
+  "date": "2020-02-08T10:42:40.197Z",
+  "body": "Event Description",
+  "images": [
+    {
+      "url": "/img/1558763703970.jpg"
+    },
+    {
+      "url": "/img/portfolio-website.png"
+    },
+    {
+      "url": "/img/spotify-profile.png"
+    }
+  ]
+}
