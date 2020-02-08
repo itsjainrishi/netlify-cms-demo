@@ -5,6 +5,15 @@
   "images": [
     {
       "url": "/img/event-1.jpg"
+    },
+    {
+      "url": "/img/event.jpg"
+    },
+    {
+      "url": "/img/event-2.jpg"
+    },
+    {
+      "url": "/img/event-3.jpg"
     }
   ]
 }
