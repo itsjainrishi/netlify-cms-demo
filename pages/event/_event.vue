@@ -2,7 +2,6 @@
   <article>
     <h1>{{ event.title }}</h1>
     <div>{{ event.body }}</div>
-    <span>{{ event.images }}</span>
     <div v-for="image in event.images">
       <img :src="`${image.url}`" />
     </div>
