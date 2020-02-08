@@ -43,12 +43,8 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/bulma'
   ],
-  markdownit: {
-    injected: true,
-  },
   /*
    ** Build configuration
    */

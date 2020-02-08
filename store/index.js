@@ -13,7 +13,7 @@ export const actions = {
     const eventfiles = await require.context(
       '~/assets/content/events/',
       false,
-      /\.md$/
+      /\.json$/
     )
     const events = eventfiles.keys().map((key) => {
       const res = eventfiles(key)
