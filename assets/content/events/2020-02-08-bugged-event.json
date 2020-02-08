@@ -2,5 +2,9 @@
   "title": "bugged event",
   "date": "2020-02-08T16:38:32.235Z",
   "body": "bug",
-  "images": []
+  "images": [
+    {
+      "url": "/img/event-1.jpg"
+    }
+  ]
 }
