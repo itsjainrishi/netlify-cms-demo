@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 export default {
   mode: 'universal',
   /*
@@ -40,8 +43,12 @@ export default {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true,
+  },
   /*
    ** Build configuration
    */
@@ -60,12 +67,10 @@ export default {
   },
   generate: {
     routes: function() {
-      const fs = require('fs');
-      const path = require('path');
-      return fs.readdirSync('./assets/content/blog').map(file => {
+      return fs.readdirSync('./assets/content/events').map(file => {
         return {
-          route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/blog/${file}`),
+          route: `/events/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/events/${file}`),
         };
       });
     },
